@@ -1,0 +1,41 @@
+section#home{
+    background: url('../assets/wallpaper01.jpg') center center no-repeat fixed;
+    background-size: cover;
+    min-height: calc(100dvh - 95px);
+    display: flex;
+    position: relative;
+}
+div#cta{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--color-neutral_0);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 35%;
+    padding: 30px;
+    margin: auto;
+}
+#title{
+    font-size: 3.5rem;
+}
+#description{
+    font-size: 1.4rem;
+}
+div#form{
+    background-color: var(--color-neutral_0);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+label{
+    text-align: center;
+}
+input{
+    border-radius: 10px;
+    padding: 5px;
+    border-color: rgba(0, 0, 0, 0.3);
+}

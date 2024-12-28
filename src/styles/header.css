@@ -1,0 +1,8 @@
+header{
+    background-color: var(--color-primary_1);
+    padding: 30px;
+}
+.logo-img{
+    color: var(--color-neutral_0);
+    font-size: 30px;
+}
