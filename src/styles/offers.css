@@ -1,3 +1,21 @@
 #offers{
-    height: 100vh;
+    display: flex;
+    height: 80dvh;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 80px;
+
+    h1{
+        font-size: 3em;
+    }
+}
+#carousel{
+    display: flex;
+    gap: 100px;
+}
+.real-state{
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-primal_1);
 }

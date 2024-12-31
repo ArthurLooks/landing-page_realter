@@ -3,6 +3,7 @@
 @import url("header.css");
 @import url("home.css");
 @import url("offers.css");
+@import url('footer.css');
 
 *{
     font-family: "Roboto", serif;
@@ -11,6 +12,8 @@
 }
 :root{
     --color-neutral_0: white;
+    --color-neutral_1: black;
 
-    --color-primary_1: rgb(15, 15, 119);
+    --color-primal_0: #4a4aff;
+    --color-primal_1: rgb(15, 15, 119);
 }
