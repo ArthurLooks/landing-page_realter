@@ -2,3 +2,6 @@ footer{
     background-color: var(--color-primal_1);
     height: 40dvh;
 }
+#contact{
+    text-align: center;
+}

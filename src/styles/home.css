@@ -1,19 +1,24 @@
-section#home{
-    background: url('../assets/wallpaper01.jpg') center center no-repeat;
+#home{
+    background: url('../assets/wallpaper01.jpg') center bottom no-repeat;
     background-size: cover;
-    min-height: calc(100dvh - 95px);
+    min-height: calc(100dvh - 88px);
+    padding-top: 88px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5dvw;
 }
-div#cta{
+#cta{
     background-color: rgba(0, 0, 0, 0.3);
     color: var(--color-neutral_0);
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     gap: 50px;
     width: 35%;
     height: 410px;
     padding: 50px;
-    margin: auto;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
     #title{
@@ -23,6 +28,7 @@ div#cta{
         font-size: 1.4rem;
     }
     .button{
+        width: 100%;
         background-color: var(--color-neutral_0);
         color: var(--color-neutral_1);
         margin-top: 15px;
@@ -34,29 +40,33 @@ div#cta{
         }
     }
 }
-div#form{
+#form{
     background-color: var(--color-neutral_0);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 40%;
     height: 410px;
-    margin: auto;
     padding: 50px;
     gap: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 
     form{
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
         text-align: center;
 
-        div{
+        .data{
+            width: 100%;
             display: flex;
             flex-flow: column nowrap;
             gap: 15px;
         }
         .button{
+            width: 100%;
             background-color: var(--color-primal_1);
             color: var(--color-neutral_0);
             margin-top: 15px;
@@ -68,6 +78,70 @@ div#form{
         input{
             border: 1px solid rgba(0, 0, 0, 0.2);
             padding: 10px;
+            width: 100%;
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #home{
+        flex-flow: column;
+        padding-bottom: 5%;
+
+    }
+    #cta{
+        background-color: transparent;
+        width: fit-content;
+        height: fit-content;
+        padding: 8%;
+    
+        #title{
+            font-size: 3rem;
+        }
+        #description{
+            display: none;
+        }
+        .button{
+            display: none;
+        }
+    }
+    #form{
+        width: 70dvw;
+        height: fit-content;
+        padding: 8%;
+        gap: 2dvh;
+    
+        form{
+            gap: 2dvh;
+    
+            .data{
+                gap: 1dvh;
+            }            
+            input{
+                padding: 1dvh;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and ( max-width:1280px) {
+    #home{
+        flex-flow: column;
+        padding: calc(2% + 88px) 0px 2% 0px;
+    }
+    #cta{
+        width: 70dvw;
+        height: fit-content;
+        padding: 5%;
+    
+        #title{
+            font-size: 3rem;
+        }
+    }
+    #form{
+        width: 70dvw;
+        height: fit-content;
+        padding: 5%;
+        gap: 2dvh;
     }
 }

@@ -1,0 +1,21 @@
+#about{
+    display: flex;
+    height: calc(100dvh - 88px);
+    padding: 88px 0px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 80px;
+}
+#storytell{
+    width: 900px;
+    height: 70%;
+    background-color: var(--color-neutral_0);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+    padding: 50px;
+    text-align: center;
+
+    h1{
+        font-size: 3em;
+    }
+}

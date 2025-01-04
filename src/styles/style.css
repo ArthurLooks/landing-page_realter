@@ -3,17 +3,23 @@
 @import url("header.css");
 @import url("home.css");
 @import url("offers.css");
+@import url("about.css");
 @import url('footer.css');
 
 *{
     font-family: "Roboto", serif;
     margin: 0px;
     padding: 0px;
+    list-style-type: none
 }
 :root{
     --color-neutral_0: white;
     --color-neutral_1: black;
 
     --color-primal_0: #4a4aff;
-    --color-primal_1: rgb(15, 15, 119);
+    --color-primal_1: #0f0f77;
+    --color-primal_2: rgba(0, 0, 0, 0.2);
+}
+html{
+    scroll-behavior: smooth;
 }

@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Projeto-01</title>
 </head>
-<body>
+<body onresize="defaul()" onscroll="scrolling()">
     <header>
-        <div class="logo-img">
-            <i class="fa-solid fa-house"></i>
-            <i class="fa-solid fa-handshake"></i>
-            <i class="fa-solid fa-key"></i>
-        </div>
+        <nav>
+            <div class="logo-img">
+                <a href="#home">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="fa-solid fa-handshake"></i>
+                    <i class="fa-solid fa-key"></i>
+                </a>
+            </div>
+            <ul id="nav_list">
+                <li class="nav-itens"><a href="#home">Início</a></li>
+                <li class="nav-itens"><a href="#offers">Ofertas</a></li>
+                <li class="nav-itens"><a href="#about">Sobre</a></li>
+                <li class="nav-itens"><a href="#contact">Contatos</a></li>
+            </ul>
+            <button class="nav-bars" onclick="displayMobileNav()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
     </header>
     <main>
         <section id="home">
@@ -24,20 +37,20 @@
             </div>
             <div id="form">
                 <h2>Preencha o formulário abaixo para encontrar oportunidades próximas a você:</h2>
-                <form action="cadastro">
-                    <div>
+                <form action="cadastro" autocomplete="on">
+                    <div class="data">
                         <label for="user">Seu Nome</label>
-                        <input type="text" id="user">
+                        <input type="text" id="user" autocomplete="name" maxlength="100">
                     </div>
-                    <div>
+                    <div class="data">
                         <label for="email">Seu Melhor E-mail</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" autocomplete="email" maxlength="50">
                     </div>
-                    <div>
+                    <div class="data">
                         <label for="phone">Seu Número de Telefone</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone" autocomplete="tel" maxlength="20">
                     </div>
-                    <div>
+                    <div class="data">
                         <input type="submit" value="Envie-me ofertas" class="button">
                     </div>
                 </form>
@@ -46,16 +59,33 @@
         <section id="offers">
             <h1>Ofertas Atuais</h1>
             <aside id="carousel">
-                <article class="real-state">
-
+                <article class="card">
+                    <img src="src/assets/imagem01-pq.jpg" alt="Imóvel01">
+                    <div class="card-content">
+                        <h2 class="card-title">Casa no Versalles</h2>
+                        <p class="card-description">Casa com piscina de 1000m quadrados, toda planejada e com arquitetura moderna.</p>
+                    </div>
                 </article>
-                <article class="real-state">
-
+                <article class="card">
+                    <img src="src/assets/imagem01-pq.jpg" alt="Imóvel02">
+                    <div class="card-content">
+                        <h2 class="card-title"></h2>
+                        <p class="card-description"></p>
+                    </div>
                 </article>
-                <article class="real-state">
-
+                <article class="card">
+                    <img src="src/assets/imagem01-pq.jpg" alt="Imóvel03">
+                    <div class="card-content">
+                        <h2 class="card-title"></h2>
+                        <p class="card-description"></p>
+                    </div>
                 </article>
             </aside>
+        </section>
+        <section id="about">
+            <article id="storytell">
+                <h1>Quem sou?</h1>
+            </article>
         </section>
     </main>
     <footer>
