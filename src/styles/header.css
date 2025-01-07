@@ -22,7 +22,7 @@ nav{
     flex-flow: row nowrap;
     cursor: pointer;
 }
-#nav_list{
+.nav_list{
     display: flex;
     flex-flow: row nowrap;
     gap: 40px;
@@ -43,14 +43,17 @@ nav{
 }
 
 @media screen and (max-width: 600px) {
-    #nav_list{
+    .nav_list{
         display: none;
+    }
+    .mobile-nav-list{
+        display: flex;
         flex-flow: column nowrap;
         gap: 0px;
         position: absolute;
         right: 5%;
         top: 90px;
-        z-index: 1000;
+        z-index: 10;
         background-color: var(--color-neutral_0);
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 5px;

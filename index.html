@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Projeto-01</title>
 </head>
-<body onresize="defaul()" onscroll="scrolling()">
+<body onscroll="scrolling()">
     <header>
         <nav>
             <div class="logo-img">
@@ -17,13 +17,13 @@
                     <i class="fa-solid fa-key"></i>
                 </a>
             </div>
-            <ul id="nav_list">
+            <ul class="nav_list">
                 <li class="nav-itens"><a href="#home">Início</a></li>
                 <li class="nav-itens"><a href="#offers">Ofertas</a></li>
                 <li class="nav-itens"><a href="#about">Sobre</a></li>
                 <li class="nav-itens"><a href="#contact">Contatos</a></li>
             </ul>
-            <button class="nav-bars" onclick="displayMobileNav()">
+            <button class="nav-bars">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
@@ -58,29 +58,33 @@
         </section>
         <section id="offers">
             <h1>Ofertas Atuais</h1>
-            <aside id="carousel">
-                <article class="card">
-                    <img src="src/assets/imagem01-pq.jpg" alt="Imóvel01">
-                    <div class="card-content">
-                        <h2 class="card-title">Casa no Versalles</h2>
-                        <p class="card-description">Casa com piscina de 1000m quadrados, toda planejada e com arquitetura moderna.</p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="src/assets/imagem01-pq.jpg" alt="Imóvel02">
-                    <div class="card-content">
-                        <h2 class="card-title"></h2>
-                        <p class="card-description"></p>
-                    </div>
-                </article>
-                <article class="card">
-                    <img src="src/assets/imagem01-pq.jpg" alt="Imóvel03">
-                    <div class="card-content">
-                        <h2 class="card-title"></h2>
-                        <p class="card-description"></p>
-                    </div>
-                </article>
-            </aside>
+            <article class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul id="carousel">                    
+                    <li class="card">
+                        <img src="src/assets/imagem01-pq.jpg" alt="Imóvel01" draggable="false">
+                        <div class="card-content">
+                            <h2 class="card-title">Casa no Versalles</h2>
+                            <p class="card-description">Casa com piscina de 1000m quadrados, toda planejada e com arquitetura moderna.</p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img src="src/assets/imagem01-pq.jpg" alt="Imóvel02" draggable="false">
+                        <div class="card-content">
+                            <h2 class="card-title"></h2>
+                            <p class="card-description"></p>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <img src="src/assets/imagem01-pq.jpg" alt="Imóvel03" draggable="false">
+                        <div class="card-content">
+                            <h2 class="card-title"></h2>
+                            <p class="card-description"></p>
+                        </div>
+                    </li>                    
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </article>
         </section>
         <section id="about">
             <article id="storytell">
