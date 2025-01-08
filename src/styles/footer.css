@@ -1,24 +1,22 @@
 footer{
     background-color: var(--color-primal_1);
-    height: 40dvh;
+    padding: 50px;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
 
+    a{
+        text-decoration: none;
+        color: var(--color-neutral_0);
+        text-align: center;
+    }
     .logo-img{
         font-size: 2em;
         display: flex;
         flex-flow: column;
         
-
-        a{
-            display: flex;
-            text-decoration: none;
-            color: var(--color-neutral_0);
-            justify-content: center;
-        }
         strong{
             font-size: .8em;
         }

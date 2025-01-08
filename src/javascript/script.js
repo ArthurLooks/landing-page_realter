@@ -10,15 +10,23 @@ const cardWidth = carousel.querySelector('.card').offsetWidth;
 
 // Mobile Menu
 const MobileNav = () => {
-    if (nav.classList[1] !== 'mobile-nav-list') {
-        nav.classList.add('mobile-nav-list')
-    } else {
+    if (nav.classList.contains('mobile-nav-list')) {
         removeMobileNav()
+    } else {
+        nav.classList.add('mobile-nav-list');
     }
-    nav.addEventListener('mouseleave', removeMobileNav)
 }
-const removeMobileNav = () => nav.classList.remove('mobile-nav-list')
-menu.addEventListener('click', MobileNav)
+const removeMobileNav = () => {
+    if(nav.classList.contains('mobile-nav-list')){
+        nav.classList.remove('mobile-nav-list')
+    }
+}
+
+menu.addEventListener('click', MobileNav);
+nav.addEventListener('mouseleave', removeMobileNav);
+document.body.addEventListener('click', removeMobileNav);
+menu.addEventListener('click', (event) => {event.stopPropagation()});
+nav.addEventListener('click', (event) => {event.stopPropagation()});
 
 // Header Effect
 function scrolling() {

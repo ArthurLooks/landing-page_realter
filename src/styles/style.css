@@ -18,7 +18,7 @@
 
     --color-primal_0: #4a4aff;
     --color-primal_1: #0f0f77;
-    --color-primal_2: rgba(0, 0, 0, 0.2);
+    --color-primal_2: rgba(0, 0, 0, 0.3);
 }
 html{
     scroll-behavior: smooth;
