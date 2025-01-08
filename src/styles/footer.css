@@ -1,7 +1,39 @@
 footer{
     background-color: var(--color-primal_1);
     height: 40dvh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    .logo-img{
+        font-size: 2em;
+        display: flex;
+        flex-flow: column;
+        
+
+        a{
+            display: flex;
+            text-decoration: none;
+            color: var(--color-neutral_0);
+            justify-content: center;
+        }
+        strong{
+            font-size: .8em;
+        }
+    }
 }
-#contact{
-    text-align: center;
+.contact{
+    display: flex;
+    color: var(--color-neutral_0);
+    font-size: 1.5em;
+    flex-flow: row nowrap;
+    gap: 20px;
+    cursor: pointer;
+
+}
+.copy{
+    color: var(--color-neutral_0);
+    font-size: .6em;
 }

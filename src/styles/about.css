@@ -5,17 +5,36 @@
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    gap: 80px;
 }
 #storytell{
-    width: 300px;
-    height: 70%;
+    width: 70dvw;
     background-color: var(--color-neutral_0);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
-    padding: 50px;
-    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    padding: 5%;
+    justify-items: center;
+    align-items: center;
 
     h1{
-        font-size: 3em;
+        font-size: 2.7em;
+        text-align: center;
     }
+    p{
+        text-indent: 1em;
+        line-height: 1.5em;
+        margin-top: 10px;
+    }
+}
+.profile{
+    width: 100%;
+}
+.about__content{
+    grid-column: span 2;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+
+}
+
+@media screen and (min-width: 1280px) {
+
 }

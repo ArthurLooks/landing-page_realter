@@ -19,7 +19,6 @@ nav{
 .logo-img{
     color: var(--color-neutral_0);
     font-size: 1.5em;
-    flex-flow: row nowrap;
     cursor: pointer;
 }
 .nav_list{

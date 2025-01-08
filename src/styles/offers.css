@@ -1,6 +1,6 @@
 #offers{
     display: flex;
-    min-height: 60dvh;
+    min-height: 70dvh;
     padding: 88px 0px 0px 0px;
     justify-content: center;
     align-items: center;
@@ -40,8 +40,12 @@
 
     #carousel{
         max-width: 80dvw;
-        display: flex;
-        gap: 5dvw;
+        margin: 0px 10px;
+        padding: 30px 0px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 300px;
+        gap: 16px;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
