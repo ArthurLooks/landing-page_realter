@@ -1,157 +1,256 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Projeto-01</title>
-</head>
-<body onscroll="scrolling()">
-    <header>
-        <nav>
-            <div class="logo-img">
-                <a href="#home">
-                    <i class="fa-solid fa-house"></i>
-                    <i class="fa-solid fa-handshake"></i>
-                    <i class="fa-solid fa-key"></i>
-                </a>
-            </div>
-            <ul class="nav_list">
-                <li class="nav-itens"><a href="#home">Início</a></li>
-                <li class="nav-itens"><a href="#offers">Ofertas</a></li>
-                <li class="nav-itens"><a href="#about">Sobre</a></li>
-                <li class="nav-itens"><a href="#contact">Contatos</a></li>
-            </ul>
-            <button class="nav-bars">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <div id="cta">
-                <h1 id="title">Está pronto para tornar seu sonho em realidade?</h1>
-                <p id="description">Preencha o formulário ao lado e descubra oportunidades imperdíveis que cabem no seu bolso para tornar seus sonhos a sua realidade!</p>
-                <button class="button">Saiba mais</button>
-            </div>
-            <div id="form">
-                <h2>Preencha o formulário abaixo para encontrar oportunidades próximas a você:</h2>
-                <form action="cadastro" autocomplete="on">
-                    <div class="data">
-                        <label for="user">Seu Nome</label>
-                        <input type="text" id="user" autocomplete="name" maxlength="100">
-                    </div>
-                    <div class="data">
-                        <label for="email">Seu Melhor E-mail</label>
-                        <input type="email" name="email" id="email" autocomplete="email" maxlength="50">
-                    </div>
-                    <div class="data">
-                        <label for="phone">Seu Número de Telefone</label>
-                        <input type="tel" name="phone" id="phone" autocomplete="tel" maxlength="20">
-                    </div>
-                    <div class="data">
-                        <input type="submit" value="Envie-me ofertas" class="button">
-                    </div>
-                </form>
-            </div>
-        </section>
-        <section id="offers">
-            <h1>Ofertas Atuais</h1>
-            <article class="wrapper">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul id="carousel">                    
-                    <li class="card">
-                        <img src="src/assets/imagem01.jpg" alt="Imóvel01" draggable="false">
-                        <div class="card-content">
-                            <h2 class="card-title">Casa no Versalles</h2>
-                            <p class="card-description">Casa com piscina de 1000m quadrados, toda planejada e com arquitetura moderna.</p>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <img src="src/assets/imagem02.jpg" alt="Imóvel02" draggable="false">
-                        <div class="card-content">
-                            <h2 class="card-title">Residência de Luxo - Condomínio Exclusivo</h2>
-                            <p class="card-description">Desfrute de um estilo de vida premium nesta casa de 5 suítes, com sala ampla, home theater e uma piscina com borda infinita. Localizada em um condomínio com segurança 24h e infraestrutura completa de lazer.</p>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <img src="src/assets/imagem03.jpg" alt="Imóvel03" draggable="false">
-                        <div class="card-content">
-                            <h2 class="card-title">Casa Compacta e Funcional - Ideal para Começar</h2>
-                            <p class="card-description">Perfeita para quem busca seu primeiro imóvel! Esta casa possui 2 dormitórios, sala integrada à cozinha e quintal privativo. Localizada em uma região tranquila, com fácil acesso a transporte e serviços.</p>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <img src="src/assets/imagem04.jpg" alt="Imóvel04" draggable="false">
-                        <div class="card-content">
-                            <h2 class="card-title">Casa Moderna com Piscina - Bairro Central</h2>
-                            <p class="card-description">Esta residência incrível combina sofisticação e conforto, com 3 suítes espaçosas, cozinha planejada e uma área gourmet com piscina privativa. Localizada no coração do bairro, perfeita para quem busca comodidade e lazer.</p>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <img src="src/assets/imagem05.jpg" alt="Imóvel05" draggable="false">
-                        <div class="card-content">
-                            <h2 class="card-title">Charmosa Casa de Campo - Refúgio Tranquilo</h2>
-                            <p class="card-description">Rodeada pela natureza, esta casa com 4 quartos é um verdadeiro paraíso. Conta com varanda ampla, lareira aconchegante e um jardim espaçoso para momentos inesquecíveis com a família. Ideal para fugir do agito da cidade.</p>
-                        </div>
-                    </li>
-                    <li class="card">
-                        <img src="src/assets/imagem06.jpg" alt="Imóvel06" draggable="false">
-                        <div class="card-content">
-                            <h2 class="card-title">Casa Clássica com Quintal Amplo - Bairro Familiar</h2>
-                            <p class="card-description">Espaço e conforto definem esta casa de 3 quartos, sala de jantar iluminada e um quintal generoso, perfeito para crianças e pets. Perto de praças e mercados, ideal para quem busca tranquilidade e praticidade.</p>
-                        </div>
-                    </li>
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-            </article>
-        </section>
-        <section id="about">
-            <article id="about-card">
-                <div class="profile">
-                    <img src="src/assets/realter.jpg" alt="Imagem do Corretor">
-                </div>
-                <div class="about__content">
-                    <h1>Sobre <span>[Nome do Corretor]</span></h1>
-                    <p>
-                        Com mais de [X anos] de experiência no mercado imobiliário, [Nome do Corretor] é referência em transformar sonhos em realidade. Especialista em identificar as melhores oportunidades e oferecer soluções personalizadas, ele atua com compromisso, transparência e paixão em cada negociação.
-                    </p>
-                    <p>
-                        Seja para encontrar o imóvel perfeito ou investir com segurança, você pode contar com a expertise e o acompanhamento de quem entende suas necessidades e valoriza suas conquistas.
-                    </p>
-                    <p>
-                        <i>"Meu objetivo é mais do que vender imóveis: é ajudar pessoas a encontrarem o lugar onde construirão suas histórias." – [Nome do Corretor]</i>
-                    </p>
-                    <p>
-                        Confie em quem conhece o mercado, valoriza o relacionamento e trabalha incansavelmente para garantir a sua satisfação.
-                    </p>
-                </div>
-            </article>
-        </section>
-    </main>
-    <footer id="contact">
-        <div class="logo-img">
-            <a href="#home">
-                <i class="fa-solid fa-house"></i>
-                <i class="fa-solid fa-handshake"></i>
-                <i class="fa-solid fa-key"></i>
-            </a>
-            <span><strong>Corretor</strong></span>
-        </div>
-        <section class="contact">
-            <a href="https://www.instagram.com/arthur_looks/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://mail.google.com/mail/u/1/#chats?compose=DmwnWrRmVPSpRqkWsrVGFRDznrMtqTVGvrCKbwMDjzGwKHrQSXzXRmVkMscmLdFgRHGVncZKqlPl" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            <a href="+55(34)99651-7780"><i class="fa-solid fa-phone"></i></a>
-            <a href="+55(34)99651-7780"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/arthur-rodrigues-looks-9292922b9/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </section>
-        <div class="copy">
-            <p>
-                Copyright &copy 2025 ArthurLooks. All Rights Reserved.
-            </p>
-        </div>
-    </footer>
-    <script src="src/javascript/script.js"></script>
-</body>
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Encontre a casa dos seus sonhos com as melhores ofertas imobiliárias. Casas, apartamentos e imóveis exclusivos que cabem no seu orçamento." />
+		<meta name="keywords" content="imóveis, casas, apartamentos, corretor, compra de imóveis, venda de imóveis" />
+		<meta name="author" content="Aniba Rodrigues Luiz" />
+		<link rel="stylesheet" href="src/styles/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title>Imóveis dos Sonhos - Encontre a Casa Perfeita Para Você</title>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="header__nav">
+				<div class="header__logo">
+					<a href="#home" class="header__logo-link" aria-label="Ir para início">
+						<i class="fa-solid fa-house"></i>
+						<i class="fa-solid fa-handshake"></i>
+						<i class="fa-solid fa-key"></i>
+					</a>
+				</div>
+				<ul class="header__menu">
+					<li class="header__menu-item">
+						<a href="#home" class="header__menu-link">Início</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#offers" class="header__menu-link">Ofertas</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#about" class="header__menu-link">Sobre</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="#contact" class="header__menu-link">Contatos</a>
+					</li>
+				</ul>
+				<button class="header__mobile-menu" aria-label="Menu">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+			</nav>
+		</header>
+		<main>
+			<a href="https://api.whatsapp.com/send?phone=5534996517780&text=Oi,%20estou%20buscando%20mais%20informa%C3%A7%C3%B5es." class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+			<section class="home" id="home">
+				<div class="home__cta">
+					<h1 class="home__title">
+						Está pronto para tornar seu sonho em realidade?
+					</h1>
+					<p class="home__description">
+						Preencha o formulário ao lado e descubra oportunidades
+						imperdíveis que cabem no seu bolso para tornar seus
+						sonhos a sua realidade!
+					</p>
+					<button class="home__button button">Saiba mais</button>
+				</div>
+
+				<div class="home__form">
+					<h2 class="home__form-title">
+						Preencha o formulário abaixo para encontrar
+						oportunidades próximas a você:
+					</h2>
+					<form class="form" method="POST" autocomplete="on">
+						<div class="form__group">
+							<label class="form__label" for="user">Seu Nome</label>
+							<input class="form__input" type="text" id="user" autocomplete="name" maxlength="100" required />
+						</div>
+						<div class="form__group">
+							<label class="form__label" for="email">Seu Melhor E-mail</label>
+							<input class="form__input" type="email" id="email" autocomplete="email" maxlength="50" required />
+						</div>
+						<div class="form__group">
+							<label class="form__label" for="phone" >Seu Número de Telefone</label>
+							<input class="form__input" type="tel" id="phone" autocomplete="tel" maxlength="20" required />
+						</div>
+						<div class="form__group">
+							<button type="submit" class="form__button button">
+								Envie-me ofertas
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+			<section class="offers" id="offers">
+				<h1 class="offers__title">Ofertas Atuais</h1>
+				<div class="carousel">
+					<button class="carousel__button carousel__button--prev" aria-label="Anterior">
+						<i class="fa-solid fa-angle-left"></i>
+					</button>
+
+					<ul class="carousel__container">
+						<li class="carousel__card">
+							<img class="carousel__image" src="src/assets/imagem01.jpg" alt="Casa no Versalles" draggable="false" />
+							<div class="carousel__content">
+								<h2 class="carousel__card-title">
+									Casa no Versalles
+								</h2>
+								<p class="carousel__card-description">
+									Casa com piscina de 1000m quadrados, toda
+									planejada e com arquitetura moderna.
+								</p>
+							</div>
+						</li>
+						<li class="carousel__card">
+							<img class="carousel__image" src="src/assets/imagem02.jpg" alt="Imóvel02" draggable="false" />
+							<div class="carousel__content">
+								<h2 class="carousel__card-title">
+									Residência de Luxo - Condomínio Exclusivo
+								</h2>
+								<p class="carousel__card-description">
+									Desfrute de um estilo de vida premium nesta
+									casa de 5 suítes, com sala ampla, home
+									theater e uma piscina com borda infinita.
+									Localizada em um condomínio com segurança
+									24h e infraestrutura completa de lazer.
+								</p>
+							</div>
+						</li>
+						<li class="carousel__card">
+							<img class="carousel__image" src="src/assets/imagem03.jpg" alt="Imóvel03" draggable="false" />
+							<div class="carousel__content">
+								<h2 class="carousel__card-title">
+									Casa Compacta e Funcional - Ideal para
+									Começar
+								</h2>
+								<p class="carousel__card-description">
+									Perfeita para quem busca seu primeiro
+									imóvel! Esta casa possui 2 dormitórios, sala
+									integrada à cozinha e quintal privativo.
+									Localizada em uma região tranquila, com
+									fácil acesso a transporte e serviços.
+								</p>
+							</div>
+						</li>
+						<li class="carousel__card">
+							<img class="carousel__image" src="src/assets/imagem04.jpg" alt="Imóvel04" draggable="false" />
+							<div class="carousel__content">
+								<h2 class="carousel__card-title">
+									Casa Moderna com Piscina - Bairro Central
+								</h2>
+								<p class="carousel__card-description">
+									Esta residência incrível combina
+									sofisticação e conforto, com 3 suítes
+									espaçosas, cozinha planejada e uma área
+									gourmet com piscina privativa. Localizada no
+									coração do bairro, perfeita para quem busca
+									comodidade e lazer.
+								</p>
+							</div>
+						</li>
+						<li class="carousel__card">
+							<img class="carousel__image" src="src/assets/imagem05.jpg" alt="Imóvel05" draggable="false" />
+							<div class="carousel__content">
+								<h2 class="carousel__card-title">
+									Charmosa Casa de Campo - Refúgio Tranquilo
+								</h2>
+								<p class="carousel__card-description">
+									Rodeada pela natureza, esta casa com 4
+									quartos é um verdadeiro paraíso. Conta com
+									varanda ampla, lareira aconchegante e um
+									jardim espaçoso para momentos inesquecíveis
+									com a família. Ideal para fugir do agito da
+									cidade.
+								</p>
+							</div>
+						</li>
+						<li class="carousel__card">
+							<img class="carousel__image" src="src/assets/imagem06.jpg" alt="Imóvel06" draggable="false" />
+							<div class="carousel__content">
+								<h2 class="carousel__card-title">
+									Casa Clássica com Quintal Amplo - Bairro
+									Familiar
+								</h2>
+								<p class="carousel__card-description">
+									Espaço e conforto definem esta casa de 3
+									quartos, sala de jantar iluminada e um
+									quintal generoso, perfeito para crianças e
+									pets. Perto de praças e mercados, ideal para
+									quem busca tranquilidade e praticidade.
+								</p>
+							</div>
+						</li>
+					</ul>
+
+					<button class="carousel__button carousel__button--next" aria-label="Próximo">
+						<i class="fa-solid fa-angle-right"></i>
+					</button>
+				</div>
+			</section>
+			<section class="about" id="about">
+				<article class="about__card">
+					<div class="about__profile">
+						<img class="about__image" src="src/assets/realter.jpg" alt="Foto do Corretor Aniba Rodrigues Luiz" />
+					</div>
+					<div class="about__content">
+						<h1 class="about__title">
+							Sobre
+							<span class="about__name">Aniba Rodrigues Luiz</span>
+						</h1>
+						<p class="about__text">
+							Com mais de 15 anos de experiência no mercado
+							imobiliário, Aniba Rodrigues Luiz é referência em
+							transformar sonhos em realidade. Especialista em
+							identificar as melhores oportunidades e oferecer
+							soluções personalizadas, ele atua com compromisso,
+							transparência e paixão em cada negociação.
+						</p>
+						<p class="about__text">
+							Seja para encontrar o imóvel perfeito ou investir
+							com segurança, você pode contar com a expertise e o
+							acompanhamento de quem entende suas necessidades e
+							valoriza suas conquistas.
+						</p>
+						<p class="about__quote">
+							"Meu objetivo é mais do que vender imóveis: é ajudar
+							pessoas a encontrarem o lugar onde construirão suas
+							histórias." – Aniba Rodrigues Luiz
+						</p>
+						<p class="about__text">
+							Confie em quem conhece o mercado, valoriza o
+							relacionamento e trabalha incansavelmente para
+							garantir a sua satisfação.
+						</p>
+					</div>
+				</article>
+			</section>
+				
+		</main>
+		<footer class="footer" id="contact">
+			<div class="footer__logo">
+				<a href="#home" class="footer__logo-link" aria-label="Ir para início">
+					<i class="fa-solid fa-house"></i>
+					<i class="fa-solid fa-handshake"></i>
+					<i class="fa-solid fa-key"></i>
+				</a>
+				<span class="footer__brand"><strong>[Nome do Corretor]</strong></span>
+			</div>
+
+			<section class="footer__social">
+				<a href="https://www.instagram.com/arthur_looks/" class="footer__social-link" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+				<a href="mailto:seuemail@exemplo.com" class="footer__social-link" aria-label="Email" ><i class="fa-solid fa-envelope"></i></a>
+				<a href="tel:+5534996517780" class="footer__social-link" aria-label="Telefone"><i class="fa-solid fa-phone"></i></a>
+				<a href="https://wa.me/5534996517780" class="footer__social-link" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+				<a href="https://www.linkedin.com/in/arthur-rodrigues-looks-9292922b9/" class="footer__social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+			</section>
+
+			<div class="footer__copyright">
+				<p>
+					&copy; 2025 [Nome do Corretor]. Todos os direitos
+					reservados.
+				</p>
+			</div>
+		</footer>
+		<script src="src/javascript/interactions.js" defer></script>
+		<script src="src/javascript/api.js" defer></script>
+	</body>
 </html>
