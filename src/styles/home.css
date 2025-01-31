@@ -40,9 +40,16 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.home__button a {
+  text-decoration: none;
+  color: var(--color-neutral_1);
+  transition: color 0.3s ease;
+}
+.home__button:hover a {
+  color: var(--color-neutral_0);
+}
 .home__button:hover {
   background-color: var(--color-primal_1);
-  color: var(--color-neutral_0);
 }
 
 .home__form {

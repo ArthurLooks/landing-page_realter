@@ -51,7 +51,7 @@
 						imperdíveis que cabem no seu bolso para tornar seus
 						sonhos a sua realidade!
 					</p>
-					<button class="home__button button">Saiba mais</button>
+					<button class="home__button button"><a href="https://api.whatsapp.com/send?phone=5534996517780&text=Oi,%20estou%20buscando%20mais%20informa%C3%A7%C3%B5es.">Saiba mais</a></button>
 				</div>
 
 				<div class="home__form">
@@ -62,15 +62,15 @@
 					<form class="form" method="POST" autocomplete="on">
 						<div class="form__group">
 							<label class="form__label" for="user">Seu Nome</label>
-							<input class="form__input" type="text" id="user" autocomplete="name" maxlength="100" required />
+							<input class="form__input" type="text" id="user" name="user" autocomplete="name" maxlength="100" required />
 						</div>
 						<div class="form__group">
 							<label class="form__label" for="email">Seu Melhor E-mail</label>
-							<input class="form__input" type="email" id="email" autocomplete="email" maxlength="50" required />
+							<input class="form__input" type="email" id="email" name="email" autocomplete="email" maxlength="50" required />
 						</div>
 						<div class="form__group">
 							<label class="form__label" for="phone" >Seu Número de Telefone</label>
-							<input class="form__input" type="tel" id="phone" autocomplete="tel" maxlength="20" required />
+							<input class="form__input" type="tel" id="phone" name="phone" autocomplete="tel" maxlength="20" required />
 						</div>
 						<div class="form__group">
 							<button type="submit" class="form__button button">
@@ -82,108 +82,342 @@
 			</section>
 			<section class="offers" id="offers">
 				<h1 class="offers__title">Ofertas Atuais</h1>
-				<div class="carousel">
-					<button class="carousel__button carousel__button--prev" aria-label="Anterior">
-						<i class="fa-solid fa-angle-left"></i>
-					</button>
+				<div class="offers__grid">
+					<article class="property-card">
+						<div class="property-card__image-container">
+							<span class="property-card__code">Cód. 43211</span>
+							<button class="property-card__favorite" aria-label="Adicionar aos favoritos">
+								<i class="fa-regular fa-heart"></i>
+							</button>
+							<div class="property-card__gallery">
+								<button class="property-card__gallery-nav property-card__gallery-nav__prev" aria-label="Foto anterior">
+									<i class="fa-solid fa-chevron-left"></i>
+								</button>
+								<img src="src/assets/imagem01.jpg" alt="Casa disponível para venda no bairro Cidade Jardim" class="property-card__image">
+								<button class="property-card__gallery-nav property-card__gallery-nav__next" aria-label="Próxima foto">
+									<i class="fa-solid fa-chevron-right"></i>
+								</button>
+								<div class="property-card__gallery-dots">
+									<span class="property-card__gallery-dot property-card__gallery-dot--active"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+								</div>
+							</div>
+						</div>
+						<div class="property-card__content">
+							<div class="property-card__price">Comprar R$ 3.800.000,00</div>
+							<h3 class="property-card__title">Casa disponível para venda no bairro Cidade Jardim em Uberlândia MG</h3>
+							<div class="property-card__location">
+								<i class="fa-solid fa-location-dot"></i>
+								<span>Cidade Jardim - Uberlândia/MG</span>
+							</div>
+							<p class="property-card__description">Casa sobrado no bairro Cidade Jardim, com impressionantes 840m² de área construída e um terreno de 1.600m², cada detalhe foi pensado para oferecer o máximo em conforto e sofisticação.</p>
+							<div class="property-card__features">
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bed"></i>
+									<span>5</span>
+									<small>Dorm.</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-shower"></i>
+									<span>4</span>
+									<small>Suítes</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bath"></i>
+									<span>6</span>
+									<small>Banho</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-car"></i>
+									<span>6</span>
+									<small>Garagens</small>
+								</div>
+							</div>
+						</div>
+					</article>
 
-					<ul class="carousel__container">
-						<li class="carousel__card">
-							<img class="carousel__image" src="src/assets/imagem01.jpg" alt="Casa no Versalles" draggable="false" />
-							<div class="carousel__content">
-								<h2 class="carousel__card-title">
-									Casa no Versalles
-								</h2>
-								<p class="carousel__card-description">
-									Casa com piscina de 1000m quadrados, toda
-									planejada e com arquitetura moderna.
-								</p>
+					<article class="property-card">
+						<div class="property-card__image-container">
+							<span class="property-card__code">Cód. 43313</span>
+							<button class="property-card__favorite" aria-label="Adicionar aos favoritos">
+								<i class="fa-regular fa-heart"></i>
+							</button>
+							<div class="property-card__gallery">
+								<button class="property-card__gallery-nav property-card__gallery-nav__prev" aria-label="Foto anterior">
+									<i class="fa-solid fa-chevron-left"></i>
+								</button>
+								<img src="src/assets/imagem02.jpg" alt="Casa disponível para venda no bairro Cidade Jardim" class="property-card__image">
+								<button class="property-card__gallery-nav property-card__gallery-nav__next" aria-label="Próxima foto">
+									<i class="fa-solid fa-chevron-right"></i>
+								</button>
+								<div class="property-card__gallery-dots">
+									<span class="property-card__gallery-dot property-card__gallery-dot--active"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+								</div>
 							</div>
-						</li>
-						<li class="carousel__card">
-							<img class="carousel__image" src="src/assets/imagem02.jpg" alt="Imóvel02" draggable="false" />
-							<div class="carousel__content">
-								<h2 class="carousel__card-title">
-									Residência de Luxo - Condomínio Exclusivo
-								</h2>
-								<p class="carousel__card-description">
-									Desfrute de um estilo de vida premium nesta
-									casa de 5 suítes, com sala ampla, home
-									theater e uma piscina com borda infinita.
-									Localizada em um condomínio com segurança
-									24h e infraestrutura completa de lazer.
-								</p>
+						</div>
+						<div class="property-card__content">
+							<div class="property-card__price">Comprar R$ 2.000.000,00</div>
+							<h3 class="property-card__title">Casa disponível para venda no bairro Cidade Jardim em Uberlândia MG</h3>
+							<div class="property-card__location">
+								<i class="fa-solid fa-location-dot"></i>
+								<span>Cidade Jardim - Uberlândia/MG</span>
 							</div>
-						</li>
-						<li class="carousel__card">
-							<img class="carousel__image" src="src/assets/imagem03.jpg" alt="Imóvel03" draggable="false" />
-							<div class="carousel__content">
-								<h2 class="carousel__card-title">
-									Casa Compacta e Funcional - Ideal para
-									Começar
-								</h2>
-								<p class="carousel__card-description">
-									Perfeita para quem busca seu primeiro
-									imóvel! Esta casa possui 2 dormitórios, sala
-									integrada à cozinha e quintal privativo.
-									Localizada em uma região tranquila, com
-									fácil acesso a transporte e serviços.
-								</p>
+							<p class="property-card__description">Belíssima casa com terreno de 720 m², com área construída 216 m², com 4 suítes, sendo a máster com 40 m², closet, banheira de hidromassagem.</p>
+							<div class="property-card__features">
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bed"></i>
+									<span>4</span>
+									<small>Dorm.</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-shower"></i>
+									<span>4</span>
+									<small>Suítes</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bath"></i>
+									<span>5</span>
+									<small>Banho</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-car"></i>
+									<span>6</span>
+									<small>Garagens</small>
+								</div>
 							</div>
-						</li>
-						<li class="carousel__card">
-							<img class="carousel__image" src="src/assets/imagem04.jpg" alt="Imóvel04" draggable="false" />
-							<div class="carousel__content">
-								<h2 class="carousel__card-title">
-									Casa Moderna com Piscina - Bairro Central
-								</h2>
-								<p class="carousel__card-description">
-									Esta residência incrível combina
-									sofisticação e conforto, com 3 suítes
-									espaçosas, cozinha planejada e uma área
-									gourmet com piscina privativa. Localizada no
-									coração do bairro, perfeita para quem busca
-									comodidade e lazer.
-								</p>
-							</div>
-						</li>
-						<li class="carousel__card">
-							<img class="carousel__image" src="src/assets/imagem05.jpg" alt="Imóvel05" draggable="false" />
-							<div class="carousel__content">
-								<h2 class="carousel__card-title">
-									Charmosa Casa de Campo - Refúgio Tranquilo
-								</h2>
-								<p class="carousel__card-description">
-									Rodeada pela natureza, esta casa com 4
-									quartos é um verdadeiro paraíso. Conta com
-									varanda ampla, lareira aconchegante e um
-									jardim espaçoso para momentos inesquecíveis
-									com a família. Ideal para fugir do agito da
-									cidade.
-								</p>
-							</div>
-						</li>
-						<li class="carousel__card">
-							<img class="carousel__image" src="src/assets/imagem06.jpg" alt="Imóvel06" draggable="false" />
-							<div class="carousel__content">
-								<h2 class="carousel__card-title">
-									Casa Clássica com Quintal Amplo - Bairro
-									Familiar
-								</h2>
-								<p class="carousel__card-description">
-									Espaço e conforto definem esta casa de 3
-									quartos, sala de jantar iluminada e um
-									quintal generoso, perfeito para crianças e
-									pets. Perto de praças e mercados, ideal para
-									quem busca tranquilidade e praticidade.
-								</p>
-							</div>
-						</li>
-					</ul>
+						</div>
+					</article>
 
-					<button class="carousel__button carousel__button--next" aria-label="Próximo">
-						<i class="fa-solid fa-angle-right"></i>
-					</button>
+					<article class="property-card">
+						<div class="property-card__image-container">
+							<span class="property-card__code">Cód. 43338</span>
+							<button class="property-card__favorite" aria-label="Adicionar aos favoritos">
+								<i class="fa-regular fa-heart"></i>
+							</button>
+							<div class="property-card__gallery">
+								<button class="property-card__gallery-nav property-card__gallery-nav__prev" aria-label="Foto anterior">
+									<i class="fa-solid fa-chevron-left"></i>
+								</button>
+								<img src="src/assets/imagem03.jpg" alt="Casa em condomínio disponível para venda no bairro Gávea" class="property-card__image">
+								<button class="property-card__gallery-nav property-card__gallery-nav__next" aria-label="Próxima foto">
+									<i class="fa-solid fa-chevron-right"></i>
+								</button>
+								<div class="property-card__gallery-dots">
+									<span class="property-card__gallery-dot property-card__gallery-dot--active"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+								</div>
+							</div>
+						</div>
+						<div class="property-card__content">
+							<div class="property-card__price">Comprar R$ 2.500.000,00</div>
+							<h3 class="property-card__title">Casa em condomínio disponível para venda no bairro Gávea em Uberlândia MG</h3>
+							<div class="property-card__location">
+								<i class="fa-solid fa-location-dot"></i>
+								<span>Gávea - Uberlândia/MG</span>
+							</div>
+							<p class="property-card__description">Belíssima casa com 210 m² de área construída em um terreno de 398 m², projetada para oferecer conforto e sofisticação. O imóvel possui acabamento de alto padrão.</p>
+							<div class="property-card__features">
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bed"></i>
+									<span>3</span>
+									<small>Dorm.</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-shower"></i>
+									<span>3</span>
+									<small>Suítes</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bath"></i>
+									<span>4</span>
+									<small>Banho</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-car"></i>
+									<span>2</span>
+									<small>Garagens</small>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="property-card">
+						<div class="property-card__image-container">
+							<span class="property-card__code">Cód. 43211</span>
+							<button class="property-card__favorite" aria-label="Adicionar aos favoritos">
+								<i class="fa-regular fa-heart"></i>
+							</button>
+							<div class="property-card__gallery">
+								<button class="property-card__gallery-nav property-card__gallery-nav__prev" aria-label="Foto anterior">
+									<i class="fa-solid fa-chevron-left"></i>
+								</button>
+								<img src="src/assets/imagem01.jpg" alt="Casa disponível para venda no bairro Cidade Jardim" class="property-card__image">
+								<button class="property-card__gallery-nav property-card__gallery-nav__next" aria-label="Próxima foto">
+									<i class="fa-solid fa-chevron-right"></i>
+								</button>
+								<div class="property-card__gallery-dots">
+									<span class="property-card__gallery-dot property-card__gallery-dot--active"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+								</div>
+							</div>
+						</div>
+						<div class="property-card__content">
+							<div class="property-card__price">Comprar R$ 3.800.000,00</div>
+							<h3 class="property-card__title">Casa disponível para venda no bairro Cidade Jardim em Uberlândia MG</h3>
+							<div class="property-card__location">
+								<i class="fa-solid fa-location-dot"></i>
+								<span>Cidade Jardim - Uberlândia/MG</span>
+							</div>
+							<p class="property-card__description">Casa sobrado no bairro Cidade Jardim, com impressionantes 840m² de área construída e um terreno de 1.600m², cada detalhe foi pensado para oferecer o máximo em conforto e sofisticação.</p>
+							<div class="property-card__features">
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bed"></i>
+									<span>5</span>
+									<small>Dorm.</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-shower"></i>
+									<span>4</span>
+									<small>Suítes</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bath"></i>
+									<span>6</span>
+									<small>Banho</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-car"></i>
+									<span>6</span>
+									<small>Garagens</small>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="property-card">
+						<div class="property-card__image-container">
+							<span class="property-card__code">Cód. 43313</span>
+							<button class="property-card__favorite" aria-label="Adicionar aos favoritos">
+								<i class="fa-regular fa-heart"></i>
+							</button>
+							<div class="property-card__gallery">
+								<button class="property-card__gallery-nav property-card__gallery-nav__prev" aria-label="Foto anterior">
+									<i class="fa-solid fa-chevron-left"></i>
+								</button>
+								<img src="src/assets/imagem02.jpg" alt="Casa disponível para venda no bairro Cidade Jardim" class="property-card__image">
+								<button class="property-card__gallery-nav property-card__gallery-nav__next" aria-label="Próxima foto">
+									<i class="fa-solid fa-chevron-right"></i>
+								</button>
+								<div class="property-card__gallery-dots">
+									<span class="property-card__gallery-dot property-card__gallery-dot--active"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+								</div>
+							</div>
+						</div>
+						<div class="property-card__content">
+							<div class="property-card__price">Comprar R$ 2.000.000,00</div>
+							<h3 class="property-card__title">Casa disponível para venda no bairro Cidade Jardim em Uberlândia MG</h3>
+							<div class="property-card__location">
+								<i class="fa-solid fa-location-dot"></i>
+								<span>Cidade Jardim - Uberlândia/MG</span>
+							</div>
+							<p class="property-card__description">Belíssima casa com terreno de 720 m², com área construída 216 m², com 4 suítes, sendo a máster com 40 m², closet, banheira de hidromassagem.</p>
+							<div class="property-card__features">
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bed"></i>
+									<span>4</span>
+									<small>Dorm.</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-shower"></i>
+									<span>4</span>
+									<small>Suítes</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bath"></i>
+									<span>5</span>
+									<small>Banho</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-car"></i>
+									<span>6</span>
+									<small>Garagens</small>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<article class="property-card">
+						<div class="property-card__image-container">
+							<span class="property-card__code">Cód. 43338</span>
+							<button class="property-card__favorite" aria-label="Adicionar aos favoritos">
+								<i class="fa-regular fa-heart"></i>
+							</button>
+							<div class="property-card__gallery">
+								<button class="property-card__gallery-nav property-card__gallery-nav__prev" aria-label="Foto anterior">
+									<i class="fa-solid fa-chevron-left"></i>
+								</button>
+								<img src="src/assets/imagem03.jpg" alt="Casa em condomínio disponível para venda no bairro Gávea" class="property-card__image">
+								<button class="property-card__gallery-nav property-card__gallery-nav__next" aria-label="Próxima foto">
+									<i class="fa-solid fa-chevron-right"></i>
+								</button>
+								<div class="property-card__gallery-dots">
+									<span class="property-card__gallery-dot property-card__gallery-dot--active"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+									<span class="property-card__gallery-dot"></span>
+								</div>
+							</div>
+						</div>
+						<div class="property-card__content">
+							<div class="property-card__price">Comprar R$ 2.500.000,00</div>
+							<h3 class="property-card__title">Casa em condomínio disponível para venda no bairro Gávea em Uberlândia MG</h3>
+							<div class="property-card__location">
+								<i class="fa-solid fa-location-dot"></i>
+								<span>Gávea - Uberlândia/MG</span>
+							</div>
+							<p class="property-card__description">Belíssima casa com 210 m² de área construída em um terreno de 398 m², projetada para oferecer conforto e sofisticação. O imóvel possui acabamento de alto padrão.</p>
+							<div class="property-card__features">
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bed"></i>
+									<span>3</span>
+									<small>Dorm.</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-shower"></i>
+									<span>3</span>
+									<small>Suítes</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-bath"></i>
+									<span>4</span>
+									<small>Banho</small>
+								</div>
+								<div class="property-card__feature">
+									<i class="fa-solid fa-car"></i>
+									<span>2</span>
+									<small>Garagens</small>
+								</div>
+							</div>
+						</div>
+					</article>
 				</div>
 			</section>
 			<section class="about" id="about">
@@ -251,6 +485,6 @@
 			</div>
 		</footer>
 		<script src="src/javascript/interactions.js" defer></script>
-		<script src="src/javascript/api.js" defer></script>
+		<script src="src/javascript/fetch-api.js" defer></script>
 	</body>
 </html>

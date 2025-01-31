@@ -1,10 +1,10 @@
 const form = document.querySelector('.form')
-const submitButton = form.querySelector('.form__button')
+const submitButton = document.querySelector('.form__button')
 
-const URL = 'http://localhost:3000/leads'
+let URL = 'http://localhost:3000/leads'
 
 const toggleLoadingState = () => {
-	submitButton.classList.toggle('form__button__loading')
+	submitButton.classList.toggle('.form__button__loading')
 }
 
 async function signUp(event) {
@@ -12,14 +12,15 @@ async function signUp(event) {
 	// prevent default evita o recarregamento da página
 	toggleLoadingState()
 
-	const formData = new FormData(form)
-	const data = {
+	let formData = new FormData(form)
+	let data = {
 		nome: formData.get('user'),
 		email: formData.get('email'),
 		telefone: formData.get('phone'),
 	}
+	console.log(data)
 	try {
-		const response = await fetch(URL, {
+		let response = await fetch(URL, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',

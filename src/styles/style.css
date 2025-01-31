@@ -16,6 +16,7 @@
 :root {
   --color-neutral_0: #ffffff;
   --color-neutral_1: #000000;
+  --color-neutral_2: rgba(255, 255, 255, 0.6);
 
   --color-primal_0: #4a4aff;
   --color-primal_1: #0f0f77;
