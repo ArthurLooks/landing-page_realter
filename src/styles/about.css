@@ -1,5 +1,4 @@
 .about {
-    min-height: calc(100dvh - 88px);
     padding: 88px 8%;
     display: flex;
     justify-content: center;

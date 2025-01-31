@@ -3,14 +3,14 @@ const submitButton = document.querySelector('.form__button')
 
 let URL = 'http://localhost:3000/leads'
 
-const toggleLoadingState = () => {
+const toggleLoading = () => {
 	submitButton.classList.toggle('.form__button__loading')
 }
 
-async function signUp(event) {
+async function sendLead(event) {
 	event.preventDefault()
 	// prevent default evita o recarregamento da página
-	toggleLoadingState()
+	toggleLoading()
 
 	let formData = new FormData(form)
 	let data = {
@@ -18,7 +18,6 @@ async function signUp(event) {
 		email: formData.get('email'),
 		telefone: formData.get('phone'),
 	}
-	console.log(data)
 	try {
 		let response = await fetch(URL, {
 			method: 'POST',
@@ -38,8 +37,8 @@ async function signUp(event) {
 			'Ocorreu um erro ao enviar seus dados. Por favor, tente novamente.'
 		)
 	} finally {
-		toggleLoadingState()
+		toggleLoading()
 	}
 }
 
-form.addEventListener('submit', signUp)
+form.addEventListener('submit', sendLead)

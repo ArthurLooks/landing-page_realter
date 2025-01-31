@@ -6,6 +6,7 @@ const header = document.querySelector('.header')
 
 const cards = document.querySelectorAll('.property-card')
 
+
 // Navegação Mobile
 const toggleMobileNav = () => {
 	navMenu.classList.toggle('header__menu--mobile')
@@ -29,16 +30,13 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll)
 
 
-
-
-// Cadastro de imóveis nos cards
+// Galeria de imagens dos cards
 cards.forEach((card) => {
 	const prevBtn = card.querySelector('.property-card__gallery-nav__prev')
 	const nextBtn = card.querySelector('.property-card__gallery-nav__next')
 	const dots = card.querySelectorAll('.property-card__gallery-dot')
 	let currentSlide = 0
 
-	// Array de URLs das imagens (você precisará adicionar mais imagens)
 	const images = [
 		'src/assets/imagem01.jpg',
 		'src/assets/imagem02.jpg',
@@ -47,17 +45,12 @@ cards.forEach((card) => {
 		'src/assets/imagem05.jpg',
 	]
 
-	function updateSlide() {
+	function updateSlide(){
 		const img = card.querySelector('.property-card__image')
 		img.src = images[currentSlide]
 
 		// Atualiza os dots
-		dots.forEach((dot, index) => {
-			dot.classList.toggle(
-				'property-card__gallery-dot__active',
-				index === currentSlide
-			)
-		})
+		dots.forEach((dot, index) => dot.classList.toggle('property-card__gallery-dot__active', index === currentSlide))
 	}
 
 	prevBtn.addEventListener('click', () => {
